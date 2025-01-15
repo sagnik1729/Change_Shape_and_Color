@@ -1,0 +1,235 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f8ff;
+}
+
+/* Container */
+.container {
+    text-align: center;
+    background: white;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+/* Outer Circle */
+#shape {
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+    background-color: #ff69b4;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Default Inner Shape (Triangle) */
+#inner-shape {
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 60px solid white;
+}
+
+/* Button Styling */
+.buttons {
+    margin-top: 20px;
+    display: flex; /* Align buttons in a row */
+    gap: 10px; /* Space between buttons */
+}
+
+button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    
+    
+        
+}
+
+button:hover {
+    background-color: darkgray;
+}
+
+/* Shapes */
+
+/* Square */
+.square {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+}
+
+/* Circle Shape */
+.circle-shape {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+/* Rectangle */
+.rectangle {
+    width: 80px;
+    height: 40px;
+    background-color: white;
+}
+
+/* Diamond */
+.diamond {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    transform: rotate(45deg);
+}
+
+/* Star */
+.star {
+    width: 0;
+    height: 0;
+    margin: 20px;
+    position: relative;
+    color: transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid white;
+    border-left: 30px solid transparent;
+    transform: rotate(35deg);
+}
+.star:before, .star:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -30px;
+    width: 0;
+    height: 0;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid white;
+    border-left: 30px solid transparent;
+    transform: rotate(-70deg);
+}
+.star:after {
+    transform: rotate(70deg);
+}
+
+/* Hexagon */
+.hexagon {
+    width: 60px;
+    height: 34.64px; /* Calculated as width * sqrt(3) / 2 */
+    background-color: white;
+    position: relative;
+    margin: 17.32px 0; /* Half of height */
+}
+.hexagon:before, .hexagon:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+}
+.hexagon:before {
+    bottom: 100%;
+    border-bottom: 17.32px solid white;
+}
+.hexagon:after {
+    top: 100%;
+    border-top: 17.32px solid white;
+}
+
+/* Pentagon */
+.pentagon {
+    position: relative;
+    width: 60px;
+    border-bottom: 40px solid white;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    height: 0;
+}
+.pentagon:before {
+    content: '';
+    position: absolute;
+    top: -40px;
+    left: -30px;
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid white;
+}
+
+/* Parallelogram */
+.parallelogram {
+    width: 80px;
+    height: 40px;
+    background-color: white;
+    transform: skew(20deg);
+}
+
+/* Arrow */
+.arrow {
+    width: 80px;
+    height: 40px;
+    background-color: white;
+    position: relative;
+}
+.arrow:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -20px;
+    width: 0;
+    height: 0;
+    border-left: 20px solid white;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+}
+
+/* Heart */
+.heart {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    transform: rotate(-45deg);
+    margin: 30px;
+}
+.heart:before,
+.heart:after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50%;
+}
+.heart:before {
+    top: -30px;
+    left: 0;
+}
+.heart:after {
+    left: 30px;
+    top: 0;
+}
+
+
+
+
+
+
+
