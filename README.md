@@ -20,7 +20,7 @@ This project demonstrates how to create a basic interactive web page where users
 - **Creativity**: Animations and creative design elements enhance the overall project.
 
 ## Hosted Link
-[Your Hosted Link Here]
+View the live project here: [Hosted Link](https://sagnik1729.github.io/Change_Shape_and_Color/)
 
 ## Instructions
 
